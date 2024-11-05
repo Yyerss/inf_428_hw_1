@@ -13,3 +13,13 @@
   - `test_midnight_crossing`: Checks if the difference when crossing midnight, such as between 23 and 1 o'clock, is correct.
   - `test_within_same_day`: Checks if the difference is correct when both clocks are within the same day.
   - `test_half_day_difference`: Checks if the difference is correct when the time differs by exactly 12 hours.
+
+## Day 2
+- Wrote the `calculate_aggregated_threat_score` function to compute an overall threat level for departments, factoring in the average threat scores and each department's importance.
+- Added a helper function, `generate_random_data`, to create random sample data based on specified mean and variance — useful for testing various scenarios.
+- Created tests for `calculate_aggregated_threat_score`:
+  - `test_zero_threat`: Validates the function when all threat scores are zero.
+  - `test_max_threat`: Checks the function with maximum threat levels, where all scores are 90.
+  - `test_mixed_threat_and_importance`: Tests cases with mixed threat levels and importance values for each department, using randomly generated data.
+- Updated `README.md` to document today’s progress and confirmed all tests passed successfully.
+
